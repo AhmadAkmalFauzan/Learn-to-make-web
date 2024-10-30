@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>secret message</title>
+    <style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        flex-direction: column;
+        background-color: #000;
+    }
+    
+    p {
+        font-size: 1.5em;
+        text-align: justify;
+        padding: 50px;
+        
+    }
+    
+    .cursor {
+        height: 200px;
+        width: 200px;
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        z-index: -1;
+    }
+
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align: center;"><i>FOR YOU</i></h1>
+    <p>Aku suka sekali menatap matamu yang indah, <br> 
+        disaat kita duduk diatas motor berdua,<br> 
+        melalui kaca motorku. <br>
+        kamu cantik, kamu indah bahkan  <br>
+        kamu jauh lebih indah dari senja. <br>
+        <br><br>
+         Kamu adalah subjek dari semua puisiku. <br>
+        aku sangat menikmati menulis puisi tentangmu, <br> 
+        tentang apapun yang berhubungan denganmu. <br>
+        <br><br>
+        Seseorang bertanya kepadaku: 
+        “Mengapa kamu selalu menulis tentangnya?” 
+         Aku pun menjawab: 
+        “Sederhana, aku menulis apapun yang membuatku senang, dan aku ingin dia abadi di setiap bait aksara yang kutulis.” .</p>
+
+    <div class="cursor"></div>
+    <script>
+        const cursor = document.querySelector(".cursor");
+window.addEventListener("mousemove", function(e){
+    cursor.style.left = (e.x-100)+"px";
+    cursor.style.top = (e.y-100)+"px";
+})
+    </script>
+</body>
+</html>
